@@ -287,7 +287,7 @@
       {
         "name": "Asofty",
         "isActive": false,
-        "description": "Aplicativo ERP para el área lógistica, utiliza Angular, .NET, Java, MySQL y SignalR para su desarrollo.",
+        "description": "Aplicativo ERP para el área lógistica, utiliza Angular, .NET, Java, MySQL y SignalR para su desarrollo. Dentro de mis labores en el proyecto está la creación de los endpoints del backend, las tablas, triggers, eventos programados y procedimientos almacenados de la base de datos, generación de reportes e integración del reporteador, facturación electrónica y transmisión de la factura eléctronica.",
         "highlights": [
           "Nuevo desarrollo",
           "Internacional",
@@ -298,7 +298,7 @@
       {
         "name": "SIMCO",
         "isActive": true,
-        "description": "Aplicativo desarrollado en .Net Framework con el uso del lenguaje C#, con librerías como Ajax y Bootstrap, es un aplicativo lógistico utilizado entro de la compañía para volver más eficacez los procesos dentro de la misma.",
+        "description": "Aplicativo desarrollado en .Net Framework con el uso del lenguaje C#, con librerías como Ajax y Bootstrap, es un aplicativo lógistico utilizado dentro de la compañía para volver más eficacez los procesos de la misma. Mi labor en este proyecto fue el desarrollo de la parte frontend, backend, algunas de las tablas y los procedimientos almacenados de la base de datos.",
         "highlights": [
           "Responsive",
           ".NET Framework",
