@@ -285,16 +285,6 @@
     }],
     "projects": [
       {
-        "name": "minimalist-portfolio",
-        "isActive": false,
-        "description": "Portafolío minímalista usando Astro 4",
-        "highlights": [
-          "Portafolío virtual",
-          "Minímalista"
-        ],
-        "url": "https://github.com/Raiking626/minimalist-portfolio-json"
-      },
-      {
         "name": "Asofty",
         "isActive": false,
         "description": "Aplicativo ERP para el área lógistica, utiliza Angular, .NET, Java, MySQL y SignalR para su desarrollo.",
