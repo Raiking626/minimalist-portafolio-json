@@ -1,0 +1,86 @@
+---
+import Section from "../Section.astro";
+
+import { education } from "../../../cv.json";
+---
+
+<Section title="Educación">
+    <ul>
+        {education.map(({ institution, area, studyType, startDate, endDate, courses }) => {
+            const startYear = new Date(startDate).getFullYear();
+            const endYear = endDate != null ? new Date(endDate).getFullYear() : "Actualidad";
+            const years = `${startYear} - ${endYear}`;
+
+            return(
+                <li>
+                    <article>
+                        <header>
+                                <div>
+                                    <h3>{institution}</h3>
+                                    <h4>{area}</h4>
+                                    <h4>{studyType}</h4>
+                                </div>
+                                <time>{years}</time>
+                            </header>
+                            
+                            <footer>
+                                {courses.map((item: string) => (
+                                    <p>{item}</p>
+                                ))}
+                            </footer>
+                    </article>
+                </li>
+            )
+        })}
+    </ul>
+</Section>
+
+<style>
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    article h3 {
+        font-weight: 500;
+        color: #111;        
+    }
+
+    article h4 {
+        color: #222;
+        font-weight: 400;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 4px;
+    }
+
+    time {
+        font-size: 0.85rem;
+        color: #555;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    footer p {
+        background-color: #eee;
+        color:black;
+        padding-right: 5px;
+        padding-left: 5px;
+        border-radius: 6px;
+        animation: all 1s ease;
+    }
+    footer p:hover {
+        background-color: #888;
+        color: white;
+    }
+</style>
